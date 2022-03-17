@@ -1,0 +1,55 @@
+
+1 que el = se utiliza para igualar una variable y el == se utiliza para igualdad
+2 
+package co.com.cesde;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner inputData = new Scanner(System.in);
+        int Cantp,Plato,Hamburguesa,Perros,Salchipapas,Chorizo;
+        double Desc,Propi,Promo,Total,PrecioNe;
+        System.out.println("Escriba La Cantidad De Personas");
+        Cantp = inputData.nextInt();
+        System.out.println("Elija Su Plato");
+        for ( Plato = 1; Plato<=10; Plato++){
+
+
+
+        Plato = inputData.nextInt();
+        Total = inputData.nextInt();
+        Desc = inputData.nextDouble();
+        Total = Cantp * Plato ;
+        Hamburguesa = 10000;
+        Perros = 8000;
+        Salchipapas = 6000;
+        Chorizo = 7000;
+
+
+
+
+        if (Total > 20000 ){
+
+             Desc = Total * 0.10 ;
+            PrecioNe = Desc-Total ;
+            System.out.println("El Descuento Aplicado Por Compras Superiores A 20000 Es De:"+Desc);
+            System.out.println("El Valor Total De la Compra Es De:"+PrecioNe);
+        }
+         else {
+
+            PrecioNe = Total + Desc;
+        }
+
+        }
+        }
+
+
+
+
+
+
+
+
+    }
+}
